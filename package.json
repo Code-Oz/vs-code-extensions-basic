@@ -1,0 +1,41 @@
+{
+  "name": "vs-code-extensions-basic",
+  "displayName": "vs-code-extensions-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/extension.js",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "keywords": [],
+  "author": "Code-Oz",
+  "license": "ISC",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vs-code-extensions-basic.hello"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "vs-code-extensions-basic.hello",
+        "title": "hello"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "cross-env --env.NODE_ENV=production webpack",
+    "dev": "cross-env --env.NODE_ENV=dev webpack --watch"
+  },
+  "dependencies": {
+    "webpack": "^5.47.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "cross-env": "^7.0.3",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.3",
+    "webpack-cli": "^4.7.2"
+  }
+}
