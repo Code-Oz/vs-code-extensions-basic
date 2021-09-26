@@ -1,0 +1,23 @@
+## **Basic typescript for developping vs code extension**
+
+You just need to run 
+
+```console
+npm install
+```
+
+For dev purposes:
+
+```console
+npm run dev
+```
+
+To test it in dev mode you need to go to `extension.ts` press F5, use `vs-code dev`
+
+Then a new window appear, you will need to run the command (`CMD+Shift+P` or `CRTL+Shift+P`) and enter your command (basically `hello`)
+
+For Prod purposes:
+
+```console
+npm run compile
+```
